@@ -1,0 +1,36 @@
+services:
+  lantern:
+    image: bobbydd021/lantern:v0.9.0-beta.1
+    container_name: lantern
+    restart: unless-stopped
+    env_file:
+      - .env
+    # Optional runtime guardrails (uncomment + tune as needed):
+    # init: true
+    # stop_grace_period: 20s
+    # mem_limit: 768m
+    # mem_reservation: 256m
+    # cpus: "1.50"
+    # pids_limit: 256
+    # logging:
+    #   driver: json-file
+    #   options:
+    #     max-size: "10m"
+    #     max-file: "5"
+    # healthcheck:
+    #   test:
+    #     [
+    #       "CMD",
+    #       "node",
+    #       "-e",
+    #       "fetch('http://127.0.0.1:3000/api/widgets',{cache:'no-store'}).then((res)=>process.exit(res.ok?0:1)).catch(()=>process.exit(1))"
+    #     ]
+    #   interval: 30s
+    #   timeout: 5s
+    #   retries: 3
+    #   start_period: 30s
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config/widgets.json:/config/widgets.json
+      - ./static/uploads:/app/static/uploads

@@ -1,0 +1,27 @@
+.DS_Store
+node_modules
+.svelte-kit
+build
+
+.env
+.env.*
+!.env.example
+
+test-results
+coverage
+backups
+
+.codex/
+dev.pid
+npm-debug.log*
+
+# Local persisted dashboard config + user uploads (mount as volumes in Docker).
+config/widgets.json
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Local docker compose (publish compose.example.yaml instead).
+compose.yaml
+
+# Local-only release helper.
+scripts/publish-public.sh

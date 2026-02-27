@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log*
+.svelte-kit
+build
+.git
+.gitignore
+.DS_Store
+test-results
+.codex
+.env
+.env.*
+!.env.example
+dev.pid
+backups

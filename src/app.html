@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (() => {
+        try {
+          const imageUrl =
+            window.localStorage.getItem('lantern.backgroundImage')?.trim() ??
+            window.localStorage.getItem('dashboard.backgroundImage')?.trim();
+          if (!imageUrl) return;
+          const safeUrl = imageUrl.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+          document.documentElement.style.setProperty('--dash-bg-image', `url("${safeUrl}")`);
+          document.documentElement.classList.add('has-custom-bg');
+          const preload = document.createElement('link');
+          preload.rel = 'preload';
+          preload.as = 'image';
+          preload.href = imageUrl;
+          preload.fetchPriority = 'high';
+          document.head.appendChild(preload);
+        } catch {}
+      })();
+    </script>
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
